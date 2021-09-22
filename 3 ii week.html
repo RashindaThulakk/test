@@ -1,0 +1,42 @@
+<!-- <html> -->
+<!-- <head> -->
+<!-- </head> -->
+<!-- <body> -->
+<!-- <script language="JavaScript" type="text/JavaScript"> -->
+<!-- <!-- -->
+<!-- var s = new String("Hello JavaScript"); //String object -->
+<!-- document.write(s.length); //length property -->
+<!-- document.write("<br>"); -->
+<!-- document.write(s.toUpperCase()); //toUpperCase() method -->
+<!-- //--> 
+
+<!-- </script> -->
+<!-- </body> -->
+<!-- </html> -->
+
+
+<html> 
+<head> 
+<script language="JavaScript" type="text/JavaScript"> 
+function Rect_Area() { 
+return this.width*this.height; } 
+
+function Rect_Perimeter() { 
+return 2*(this.width+this.height); } 
+
+function Rectangle(w,h) 
+{ 
+this.width=w; 
+this.height=h; 
+this.area=Rect_Area; 
+this.perimeter=Rect_Perimeter; 
+} 
+rect=new Rectangle(4,3); 
+document.write(rect.width); 
+document.write("<br>"); 
+document.write(rect.area()); 
+</script> 
+</head> 
+<body> 
+</body> 
+</html>

@@ -1,0 +1,72 @@
+<html>
+    <head><title>Calculator</title>
+        
+        <script  type="text/javascript">
+         var x,y;
+                function add(){
+                    x= parseInt(f1.first.value);
+                    y= parseInt(f1.second.value);
+                    f1.Result.value=x+y;
+                }
+                function sub(){
+                    x= parseInt(f1.first.value);
+                    y= parseInt(f1.second.value);
+                    f1.Result.value=x-y;
+                    
+                }
+                function multi(){
+                    x= parseInt(f1.first.value);
+                    y= parseInt(f1.second.value);
+                    f1.Result.value=x*y;
+                     
+                }
+                function devi(){
+                    x= parseInt(f1.first.value);
+                    y= parseInt(f1.second.value);
+                    f1.Result.value=x/y;
+                     
+                }
+                function mod(){
+                    x= parseInt(f1.first.value);
+                    y= parseInt(f1.second.value);
+                    f1.Result.value=x%y;
+                }
+                function clr(){
+                    f1.Result.value="";
+                    f1.first.value="";
+                    f1.second.value="";
+                }
+        </script>
+    </head>
+    <body>
+        <form name="f1">
+        <table border="1" > 
+            <tr>
+                <td >Enter first number  </td>
+                <td ><input type="text" name="first" size="7"></td>
+            </tr>
+            <tr>
+                <td >Enter second number  </td>
+                <td ><input type="text" name="second" size="7"></td>
+            </tr>
+            <tr>
+                <td >
+                    <input type="button" value="+" onclick="add()">
+                    <input type="button" value="-" onclick="sub()"> 
+                    <input type="button" value="/" onclick="devi()">
+                    <input type="button" value="mod" onclick="mod()"> 
+                    
+                
+					<input type="button" value="*" onclick="multi()"> 
+                    <input type="button" value="CL" onclick="clr()"> 
+				</td>
+               
+            </tr>
+            <tr>
+                <td >Result  </td>
+                <td ><input type="" name="Result" size="7"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
